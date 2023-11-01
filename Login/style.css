@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow-x:hidden ;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    padding: 0 4.8rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:blue;
+    position: sticky;
+    z-index: 1;
+}
+.header .logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.navbar-list{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+.navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+    transition: all 0.3s;
+    font-family: 'Kalam', cursive;
+}
+
+.navbar-link:hover, .navbar-link:active{
+    color: skyblue;
+}
+
+.mobile-navbar-btn{
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon{
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
+
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+}
+.Login-container{
+    box-sizing: border-box;
+    width: 1000px;
+    height: 700px;
+    border-radius: 50px;
+    box-shadow: 15px 15px 15px rgb(0,0,0);
+    display: flex;
+    flex-direction: row;
+    background-position: center;
+    background-size: contain;
+}
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.Login-pic{
+    opacity: 0.9;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(Background.jpg);
+    width: 450px;
+    height: 700px;
+    border-radius: 50px 0 0 50px;
+    border-right: 5px solid #0000ff;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-des{
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+}
+.Login-h1{
+    font-family: 'Young Serif', serif;
+    font-size: 80px;
+    margin-bottom: 100px;
+    color: #0000ff;
+}
+.Login input{
+    padding: 5px;
+    margin: 4px;
+    font-family: cursive;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid black;
+    transition: 0.4s ease;
+    font-family: 'Kalam', cursive;
+}
+.Login input:active{
+    transform: scale(1.2);
+}
+.Password input{
+    padding: 5px;
+    margin: 4px;
+    font-family: cursive;
+    margin-bottom: 20px;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid black;
+    transition: 0.4s ease;
+    font-family: 'Kalam', cursive;
+}
+.Password input:active{
+    transform: scale(1.2);
+}
+.Submit button{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    background-color: #0000ff;
+    padding: 8px 22px;
+    border-radius: 16px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+.Submit button:active{
+    transform: scale(1.1);
+}
+.Login-pic h1{
+    background-color: white;
+    color: blue;
+    border-radius: 25px;
+    padding: 8px 22px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: 0.2s ease forwards;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.LS::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+    background-color: #0000ff;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+.LS:hover:before{
+    transform: translateX(0%);
+}
+.LS:hover{
+    color: #fff;
+}
+.SS::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+    background-color: #0000ff;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+.SS:hover:before{
+    transform: translateX(0%);
+}
+.SS:hover{
+    color: #fff;
+}
+.Forgot{
+    display: flex;
+    gap: 25px;
+}
+.For a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: logoani 1s ease forwards;
+}
+.logo{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: logoani 1s ease forwards;
+}
+
+.nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+        margin-top: 30px;
+        padding-right: 25px;
+}
+.social-link{
+    display: flex;
+    float: inline-end;
+    list-style: none;
+}
+.nav-link li{
+    animation: Navliani forwards 1s ease;
+    list-style: none;
+}
+.nav-link li a{
+    margin: 10px;
+    transition: .4s ease;
+    color: #fff;
+    text-decoration: none;
+    
+}
+.social-link a{
+    color: red;
+    margin: 10px;
+    text-decoration: none;
+}
+.social-link a:hover{
+    color: aqua;
+}
+.nav-link li a:hover{
+    color: aqua;
+}
+.social-link li a{
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    transform: rotate(45deg);
+    transition: .4s ease;
+}
+.social-link li a:hover{
+    border-color: blue;
+}
+.social-link li a i{
+    transform: rotate(-45deg);
+    font-size: 22px;
+}
+@keyframes logoani {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(100px);
+        opacity: 1;
+    }
+  }
+
+  @keyframes Navliani {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+  .Acc{
+    display: none;
+    position:absolute;
+    left: 0;
+    top: 100%;
+    background-color: skyblue;
+    border-radius: 8px;
+}
+.Acc ul{
+    display: block;
+    margin: 10px;
+}
+.Acc ul li{
+    padding: 5px;
+    width: 100%;
+}
+.Navigation ul li:hover .Acc{
+    display: block;
+    position: absolute;
+}
+.Navigation{
+    padding: 8px 8%;
+    position: sticky;
+    top: 0;
+    background-color: blue;
+    z-index: +1;
+    border-radius: 8px;
+}
+.smedia{
+    display: flex;
+    gap: 20px;
+}
+.smedia i{
+    cursor: pointer;
+    font-size: xx-large;
+}
+.Login-pic{
+    display: flex;
+    gap: 25px;
+}
+@media(max-width: 62em){
+    .Login-container{
+        display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 50px;
+    margin-left: 5px;
+    margin-bottom: 25px;
+}
+.Login-pic{
+    width: auto;
+    border-radius: 50px;
+    border-right: 0;
+}
+.login-des{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.Navigation{
+    width: 410px;
+}
+.signup-h1{
+    margin-top: -125px;
+    text-align: center;
+    font-size: larger;
+}
+.signup-swap{
+    text-align: center;
+}
+.Forgot{
+    display: inline;
+}
+.Signup-Submit{
+    display: contents;
+}
+.sgnmedia{
+    justify-content: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    margin-left: -130px;
+}
+.mobile-navbar-btn{
+    display: block;
+    z-index: 999;
+    border: 3px solid white;
+    color: white;
+    background:transparent;
+
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    background: blue;
+    color: #fff;
+
+    top: 100%;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(100%);
+    transition: all 0.8s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.header img{
+    margin-left: -30%;
+}
+.navbar-list{
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.active .navbar{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+}
+.active .mobile-navbar-btn .mobile-nav-icon[name = "close-outline"]{
+    display: block;
+}
+
+.active .mobile-navbar-btn .mobile-nav-icon[name = "menu-outline"]{
+display: none;
+}
+}
+.login-swap{
+    display: none;
+}
+.signup-swap{
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: -15px;
+}
+.signup-h1{
+    font-family: 'Young Serif', serif;
+    font-size: 80px;
+    margin-bottom: 50px;
+    color: #0000ff;
+    margin-left: -25px;
+}
+.Signup-Submit button{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    background-color: #0000ff;
+    padding: 8px 22px;
+    border-radius: 16px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+.Signup-Submit button:active{
+    transform: scale(1.1);
+}
+.Signup-Submit{
+    justify-content: center;
+    margin-left: 80px;
+}
+.sgnmedia{
+    display: flex;
+    gap: 20px;
+    margin-left: 25px;
+}
+.sgnmedia i{
+    cursor: pointer;
+    font-size: xx-large;
+}
